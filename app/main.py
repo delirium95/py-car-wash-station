@@ -41,4 +41,5 @@ class CarWashStation:
         else:
             total_score = self.average_rating * self.count_of_ratings
             total_score += rate
+            self.count_of_ratings += 1
             self.average_rating = round(total_score / self.count_of_ratings, 1)
